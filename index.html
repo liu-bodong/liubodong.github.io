@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>刘博栋 - Personal Website</title>
+  <title>Bodong Liu - Personal Website</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,25 +13,34 @@
     }
 
     header {
-      text-align: center;
-      background-color: #333;
+      font-family: 'Playfair Display', sans-serif;
+      text-align: left;
+      background-color: #6cb9e2;
       color: white;
       padding: 20px 0;
     }
 
     h1 {
-      font-size: 28px;
+      font-size: 48px;
       margin: 5px 0;
+      margin-left: 30px;
     }
 
     h2 {
       font-size: 20px;
       margin: 0;
+      margin-left: 20px;
     }
 
     .contact {
-      margin-top: 20px;
-      font-size: 18px;
+      margin-top: 18px;
+      font-size: 16px;
+      margin-left: 30px;
+    }
+
+    .contact a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
     }
 
     .about {
@@ -41,8 +50,8 @@
 
     .sidebar {
       float: right;
-      width: 20%;
-      background-color: #f4f4f4;
+      width: 8%;
+      background-color: #edededb9;
       padding: 20px;
       height: 100vh;
       position: fixed;
@@ -52,8 +61,17 @@
     .sidebar a {
       display: block;
       margin-bottom: 10px;
-      color: #333;
+      color: #454545;
       text-decoration: none;
+      font-size: 16px;
+      transition: font-size 0.3s, color 0.3s;
+    }
+
+    .sidebar a:hover {
+      /*When hovering, the text becomes bold, deeper color, and bigger*/
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
     }
   </style>
 </head>
@@ -61,7 +79,7 @@
 <body>
   <header>
     <h1>刘博栋</h1>
-    <h2>Bodong Liu</h2>
+    <h1>Bodong Liu</h1>
     <div class="contact">
       <a href="mailto:bl576@cornell.edu">bl576@cornell.edu</a>
     </div>
@@ -69,14 +87,13 @@
   <div class="sidebar">
     <a href="#about">About</a>
     <a href="#cv">CV</a>
-    <a href="#github">Github</a>
-    <a href="#linkedin">LinkedIn</a>
+    <a href="https://github.com/liu-bodong" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/bodong-liu/" target="_blank">LinkedIn</a>
   </div>
-  <div style="margin-right: 25%;">
+  <div style="margin-left: 16%;">
     <section id="about" class="about">
-      <h2>About</h2>
-      <p>Hi, I am a student at Cornell University. I am generally interested in astronomy, physics, and computer
-        science.</p>
+      <p>Hi, I am an undergraduate student at Cornell University. </p>
+      <p>I am interested in astronomy, physics, and computer science.</p>
     </section>
     <section>
       <!-- Placeholder for your main picture -->
